@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --primaryColor: #398572;
+    --secondaryColor: #26272f;
+}
+a, button{
+    text-decoration: none;
+    transition: 0.3s;
+    color: aliceblue;
+}
+a:hover , button:hover{
+    opacity: 0.7;
+}
+/* ------------------------------------------------------------------------------------------------------------------------- */
+.body{
+    background: var(--secondaryColor);
+    overflow-x: hidden; 
+    color: aliceblue;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 8vh;
+    padding: 0vh 15vw;
+    position: fixed;
+    z-index: 1;
+    background-color: var(--primaryColor)
+}
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+#nav{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+#nav-button{
+    background-color: transparent;
+    border: none;
+}
+#nav-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    transform: translateX(-100%);
+    top: 8vh;
+    left: 0;
+    width: 30vw;
+    height: 92vh;
+    background-color: var(--primaryColor);
+    list-style: none;
+    transition: transform 0.3s ease-in;
+}
+#nav.active #nav-list{
+    transform: translateX(0%);
+}
+#iconMenu{
+    display: block;
+    background-color: none;
+    border-top: 2.5px solid aliceblue;
+    width: 20px;
+}
+#iconMenu:hover{
+    cursor: pointer;
+}
+#iconMenu::after, #iconMenu::before{
+    content: "";
+    color: aliceblue;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+}
+#nav.active #iconMenu{
+    border-top-color: transparent;
+}
+#nav.active #iconMenu::before{
+    transform: rotate(135deg);
+}
+#nav.active #iconMenu::after{
+    transform: rotate(-135deg);
+    top: -7px;
+}
+/* ------------------------------------------------------------------------------------------------------------------- */
+.div-search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    gap: 10px;
+}
+.div-search input{
+    width: 100%; 
+    height: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+.div-perfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.div-perfil img{
+    width: 40px;
+}
