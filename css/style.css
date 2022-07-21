@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +6,7 @@
     scroll-behavior: smooth;
 }
 :root{
-    --primaryColor: #398572;
+    --primaryColor: #48b59a;
     --secondaryColor: #26272f;
 }
 a, button{
@@ -18,8 +19,12 @@ a:hover , button:hover{
 }
 /* ------------------------------------------------------------------------------------------------------------------------- */
 .body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: var(--secondaryColor);
     overflow-x: hidden; 
+    width: 100vw;
     color: aliceblue;
 }
 .header{
@@ -30,7 +35,6 @@ a:hover , button:hover{
     width: 100vw;
     height: 8vh;
     padding: 0vh 15vw;
-    position: fixed;
     z-index: 1;
     background-color: var(--primaryColor)
 }
@@ -114,4 +118,54 @@ a:hover , button:hover{
 }
 .div-perfil img{
     width: 40px;
+}
+/* -------------------------------------------------------------------------------------------- */
+.main{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    width: 70%;
+    margin-top: 20px;
+}
+.main h1{
+    color: var(--primaryColor);
+    font-size: 50px;
+}
+.products-section{
+    display: flex;
+    flex-direction: row;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin: 30px 5px;
+    border: 5px solid #545669;
+}
+.card img{
+    width: 100%;
+}
+.card h3{
+    margin: 5px;
+}
+.card div{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 100%;
+}
+.hidden{
+    display: none;
+}
+
+@media (max-width: 900px){
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin: 30px 5px;
+        border: 5px solid #545669;
+    }
 }

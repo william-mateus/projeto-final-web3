@@ -4,8 +4,9 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/assets/logo.jpg">
         <link rel="stylesheet" href="css/style.css">
-        <title>Document</title>
+        <title>Low Prices</title>
     </head>
     <body class="body">
         <header class="header">
@@ -21,13 +22,30 @@
                 <h3>Menu</h3>
             </nav>
             <div class="div-search">
-                <input type="text" placeholder="pesquisar">
+                <input type="search" id="search" placeholder="pesquisar" data-search>
             </div>
             <div class="div-perfil">
                 <h3>Perfil</h3>
                 <img src="/assets/user_icon.png" alt="">
             </div>
         </header>
+        <main class="main">
+            <h1>Low Prices</h1>
+            <section class="products-section" data-product-cards-container>
+                <template data-product-template>
+                    <figure class="card">
+                        <a href="">
+                            <img src="" alt="">
+                            <h3 data-title></h3>
+                            <div>
+                                <p>Menor preço</p>
+                                <h2 data-price></h2>
+                            </div>
+                        </a>
+                    </figure>
+                </template>
+            </section>
+        </main>
     </body>
     <script src="js/script.js"></script>
 </html>
