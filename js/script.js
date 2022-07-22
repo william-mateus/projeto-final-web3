@@ -6,7 +6,10 @@ let products = []
 
 searchInput.addEventListener("input", e => {
     const value = e.target.value
-    console.log(products)
+    products.forEach(product => {
+        const isVisible = product.title.includes(value) || product.price.includes(value)
+        product.element.classList.toggle('hidden', !isVisible)
+    })
 })
 
 fetch("https://fakestoreapi.com/products")
