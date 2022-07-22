@@ -16,10 +16,12 @@ fetch("https://fakestoreapi.com/products")
             const card = productCardTemplate.content.cloneNode(true).children[0]
             const title = card.querySelector("[data-title]")
             const price = card.querySelector("[data-price]")
+            const image = card.querySelector("[data-image]")
             title.textContent = product.title
             price.textContent = product.price
+            image.src = product.image
             productCardContainer.append(card)
-            return {title: product.title, price: product.price, element: card}
+            return {title: product.title, price: product.price, inage: product.image, element: card}
         })
     })
 
