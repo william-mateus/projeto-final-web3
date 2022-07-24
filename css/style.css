@@ -31,6 +31,7 @@ a:hover , button:hover{
 .header{
     display: flex;
     flex-direction: row;
+    position: fixed;
     align-items: center;
     justify-content: space-between;
     width: 100vw;
@@ -66,9 +67,8 @@ a:hover , button:hover{
 }
 #nav-list button{
     width: 80%;
-    height: 20%;
-    background-color: #545669;
-    color: black;
+    height: 18%;
+    background-color: var(--secondaryColor);
 }
 #nav.active #nav-list{
     transform: translateX(0%);
@@ -132,7 +132,7 @@ a:hover , button:hover{
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     width: 70%;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 .main h1{
     color: var(--primaryColor);
@@ -149,7 +149,7 @@ a:hover , button:hover{
     width: 90%;
     height: 515px;
     margin: 30px 5px;
-    border: 5px solid #545669;
+    border: 5px solid var(--primaryColor);
     background-color: rgb(207, 207, 207);
     color: black;
 }
