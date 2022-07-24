@@ -12,14 +12,13 @@
         <header class="header">
             <nav id="nav">
                 <button id="nav-button"><span id="iconMenu"></span></button>
-                <ul id="nav-list"> 
-                    <li><a href="/">Smartphones</a></li>
-                    <li><a href="/">Notebooks</a></li>
-                    <li><a href="/">Desktops</a></li>
-                    <li><a href="">Consoles</a></li>
-                    <li><a href="/">TVs</a></li>
-                </ul>
-                <h3>Menu</h3>
+                <div id="nav-list"> 
+                    <button class="menu-button" data-electronics>Eletrônicos</button>
+                    <button class="menu-button" data-jewelery>Jóias</button>
+                    <button class="menu-button" data-mans-clothes>Roupas masculinas</button>
+                    <button class="menu-button" data-women-clothes>Roupas femininas</button>
+                </div>
+                <h3>Filtrar por categoria</h3>
             </nav>
             <div class="div-search">
                 <input type="search" id="search" placeholder="pesquisar" data-search>
@@ -30,10 +29,9 @@
             </div>
         </header>
         <main class="main">
-            <h1>Low Prices</h1>
             <section class="products-section" data-product-cards-container>
                 <template data-product-template>
-                    <a href="">
+                    <a href="/product-description.html">
                         <figure class="card">          
                             <img src="" alt="" data-image>
                             <h3 data-title></h3>

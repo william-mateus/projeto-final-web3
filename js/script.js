@@ -1,13 +1,14 @@
 const productCardTemplate = document.querySelector("[data-product-template]")
 const productCardContainer = document.querySelector("[data-product-cards-container]")
 const searchInput = document.querySelector("[data-search]")
+const mansClothes = document.querySelector("[data-mans-clothes]")
 
 let products = []
 
 searchInput.addEventListener("input", e => {
-    const value = e.target.value
+    const value = e.target.value.toLowerCase()
     products.forEach(product => {
-        const isVisible = product.title.includes(value) || product.price.includes(value)
+        const isVisible = product.title.toLowerCase().includes(value)
         product.element.classList.toggle('hidden', !isVisible)
     })
 })
