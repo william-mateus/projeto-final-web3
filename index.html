@@ -13,11 +13,11 @@
             <nav id="nav">
                 <button id="nav-button"><span id="iconMenu"></span></button>
                 <div id="nav-list"> 
-                    <button class="menu-button" data-electronics>Eletrônicos</button>
-                    <button class="menu-button" data-jewelery>Jóias</button>
-                    <button class="menu-button" data-mans-clothes>Roupas masculinas</button>
-                    <button class="menu-button" data-women-clothes>Roupas femininas</button>
-                    <button class="menu-button" data-electronics>Todas categorias</button>
+                    <button class="menu-button" oncLick="filterProduct('all')">All</button>
+                    <button class="menu-button" oncLick="filterProduct('electronics')">Electronics</button>
+                    <button class="menu-button" oncLick="filterProduct('jewelery')">Jewelery</button>
+                    <button class="menu-button" oncLick="filterProduct('mens-clothing')">Mens-clothing</button>
+                    <button class="menu-button" oncLick='filterProduct("womens-clothing")'>Womens-clothing</button>
                 </div>
                 <h3>Filtrar por categoria</h3>
             </nav>
@@ -36,6 +36,7 @@
                         <figure class="card">          
                             <img src="" alt="" data-image>
                             <h3 data-title></h3>
+                            <h3 data-category></h3>
                             <div>
                                 <p>Menor preço</p>
                                 <h2 data-price></h2>

@@ -65,10 +65,13 @@ a:hover , button:hover{
     list-style: none;
     transition: transform 0.3s ease-in;
 }
-#nav-list button{
+.menu-button{
     width: 80%;
     height: 18%;
     background-color: var(--secondaryColor);
+}
+.button-active{
+    background-color: #48b59a;
 }
 #nav.active #nav-list{
     transform: translateX(0%);
