@@ -25,8 +25,10 @@
                 <input type="search" id="search" placeholder="pesquisar" data-search>
             </div>
             <div class="div-perfil">
-                <h3>Perfil</h3>
-                <img src="/assets/user_icon.png" alt="">
+                <button class="button-perfil"> 
+                    <img src="/assets/user_icon.png" alt="">
+                    <p>Perfil</p>
+                </button>
             </div>
         </header>
         <main class="main">
@@ -35,11 +37,13 @@
                     <a href="/product-description.html">
                         <figure class="card">          
                             <img src="" alt="" data-image>
-                            <h3 data-title></h3>
-                            <h3 data-category></h3>
-                            <div>
-                                <p>Menor preço</p>
-                                <h2 data-price></h2>
+                            <div class="card-description">
+                                <h2 data-title></h2>
+                                <p data-category></p>
+                                <div>
+                                    <h3>R$</h3>
+                                    <h3 data-price></h3>
+                                </div>
                             </div>
                         </figure>   
                     </a>
