@@ -125,18 +125,19 @@ a:hover , button:hover{
     display: flex;
     flex-direction: column;
 }
-.button-perfil{
+.button-signout{
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: transparent;
     padding-right: 10px;
 }
-.button-perfil:hover{
-    background-color: var(--secondaryColor)
+.button-signout img {
+    width: 30px;
+    margin-right: 5px;
 }
-.button-perfil img{
-    width: 40px;
+.button-signout:hover{
+    background-color: var(--secondaryColor)
 }
 /* -------------------------------------------------------------------------------------------- */
 .main{

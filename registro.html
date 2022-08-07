@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Low Prices</title>
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/login_registro.css">
+    </head>
+    <body>
+        <img src="assets/low_price.png" alt="logo Low Price" class="logo">
+
+        <nav id="toobar">
+            <div style="margin-left: auto;">
+                <a href="login.php"><button type="button" id="login" class="button-toobar">login</button></a>
+            </div>
+        </nav>
+
+        <form action="cadastro.php" method="post" >
+            <h1>Cadastro</h1>     
+            <input type="text" placeholder="Nome" id="usuario" class="input"  name="nome" required>    
+            <input type="email" placeholder="Email:" id="email" class="input" name="email" required>    
+            <input type="password" placeholder="Senha" id="senha" class="input" name="senha" required>
+            <button type = "submit" class="entrar" value="cadastro">Feito!!</button>
+        </form>
+    </body>
+</html>
